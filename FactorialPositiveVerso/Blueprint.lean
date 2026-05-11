@@ -9,9 +9,9 @@ open Verso.Genre
 open Verso.Genre.Manual
 open Informal
 
-#doc (Manual) "Positividad del Factorial" =>
+#doc (Manual) "Factorial Positivity" =>
 
-Este Blueprint formaliza la definición de la función factorial y demuestra que su resultado es siempre estrictamente mayor que cero para cualquier número natural.
+This Blueprint formalizes the definition of the factorial function and proves that its result is always strictly greater than zero for any natural number.
 
 {include 0 FactorialPositiveVerso.Chapters.Factorial}
 

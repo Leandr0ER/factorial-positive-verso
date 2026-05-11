@@ -9,13 +9,13 @@ open Informal
 #doc (Manual) "Factorial" =>
 
 :::group "factorial_core"
-Definición y propiedades básicas de la función factorial.
+Basic definition and properties of the factorial function.
 :::
 
 :::definition "def:factorial" (parent := "factorial_core")
-Para cualquier número natural $`n`, definimos el factorial de $`n`, denotado por $`n!`, recursivamente como:
-* $`0! = 1`
-* $`(n+1)! = (n+1) * n!`
+For any natural number $n$, we define the factorial of $n$, denoted by $n!$, recursively as:
+* $0! = 1$
+* $(n+1)! = (n+1) * n!$
 :::
 
 ```lean "def:factorial"
@@ -25,14 +25,14 @@ def fac : Nat -> Nat
 ```
 
 :::theorem "thm:fac_pos" (parent := "factorial_core")
-Para todo número natural $`n`, el factorial de $`n` es estrictamente positivo:
-$`n! > 0`.
+For every natural number $n$, the factorial of $n$ is strictly positive:
+$n! > 0$.
 :::
 
 :::proof "thm:fac_pos"
-Por inducción sobre $`n`.
-* *Caso base:* $`0! = 1 > 0`.
-* *Paso inductivo:* Supongamos $`n! > 0`. Entonces $`(n+1)! = (n+1) * n!`. Como $`n+1 > 0` y $`n! > 0` (por hipótesis de inducción), su producto es positivo.
+By induction on $n$.
+* *Base case:* $0! = 1 > 0$.
+* *Inductive step:* Assume $n! > 0$. Then $(n+1)! = (n+1) * n!$. Since $n+1 > 0$ and $n! > 0$ (by inductive hypothesis), their product is positive.
 :::
 
 ```lean "thm:fac_pos"
@@ -44,3 +44,4 @@ theorem fac_pos (n: Nat) : 0 < fac n := by
     unfold fac
     exact Nat.mul_pos (Nat.succ_pos n) ih
 ```
+

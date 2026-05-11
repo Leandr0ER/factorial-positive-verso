@@ -1,14 +1,14 @@
-# factorial-positive-verso (Test)
+# factorial-positive-verso
 
-Este proyecto es una formalización en Lean 4 basada en la plantilla `verso-blueprint`.
+This project is a Lean 4 formalization based on the `verso-blueprint` template.
 
-## Estructura
+## Structure
 
-- `FactorialPositiveVerso/`: Código fuente del blueprint.
-- `FactorialPositiveVersoMain.lean`: Generador del sitio web.
-- `scripts/ci-pages.sh`: Script para construcción local.
+- `FactorialPositiveVerso/`: Blueprint source code.
+- `FactorialPositiveVersoMain.lean`: Web site generator.
+- `scripts/ci-pages.sh`: Script for local construction.
 
-## Comandos útiles
+## Useful Commands
 
 ```bash
 lake update
