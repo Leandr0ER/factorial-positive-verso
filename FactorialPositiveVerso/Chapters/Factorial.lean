@@ -24,8 +24,8 @@ def fac : Nat -> Nat
   | n+1 => (n+1) * fac n
 ```
 
-:::theorem "thm:fac_pos" (parent := "factorial_core")
-For every natural number $`n`, the factorial of $`n` is strictly positive:
+:::theorem "thm:fac_pos" (parent := "factorial_core") (uses := ["def:factorial"])
+For every natural number $`n`, the factorial function {uses "def:factorial"}[] results in a strictly positive value:
 $`n! > 0`.
 :::
 
